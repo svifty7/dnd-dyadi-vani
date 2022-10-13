@@ -1,0 +1,37 @@
+// Variables
+@import "variables";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.schema {
+  display: none !important;
+}
+
+body {
+  display: flex;
+  background-color: var(--bg-main);
+  font-family: "Verdana", sans-serif, "Helvetica", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  &[type="text"],
+  &[type="number"] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "dnd-dyadi-vani",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env VUE_SERVE=true vue-cli-service serve",
+    "watch": "vue-cli-service build --watch --mode=develop",
+    "build:dev": "vue-cli-service build --mode=develop",
+    "build:prod": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "pinia": "^2.0.23",
+    "vue": "^3.2.40",
+    "vue-easy-lightbox": "^1.5.0",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.18.2",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "eslint-plugin-vuejs-accessibility": "^1.2.0",
+    "file-loader": "^6.2.0",
+    "lint-staged": "^13.0.3",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo-loader": "^3.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
+}
