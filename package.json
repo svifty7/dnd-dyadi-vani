@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "cross-env VUE_SERVE=true vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "watch": "vue-cli-service build --watch --mode=develop",
     "build:dev": "vue-cli-service build --mode=develop",
     "build:prod": "vue-cli-service build",
@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.23",

@@ -16,12 +16,6 @@ module.exports = defineConfig({
         }
     },
     chainWebpack: config => {
-        if (process.env.VUE_SERVE !== 'true') {
-            config.plugins.delete('html');
-            config.plugins.delete('preload');
-            config.plugins.delete('prefetch');
-        }
-
         config.module
             .rule('svg')
             .exclude
