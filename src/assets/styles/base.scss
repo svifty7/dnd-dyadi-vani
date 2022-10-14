@@ -6,6 +6,7 @@
   outline: none;
   appearance: none;
   -webkit-overflow-scrolling: touch;
+  line-height: 1.5;
 }
 
 .hidden {
@@ -17,9 +18,18 @@
 }
 
 body {
-  display: flex;
   background-color: var(--bg-main);
-  font-family: "Verdana", sans-serif, "Helvetica", sans-serif;
+  font: {
+    family: "Verdana", "Helvetica", sans-serif;
+    size: 16px;
+    weight: normal;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 button {
@@ -33,5 +43,16 @@ input {
   &[type="number"] {
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+
+a {
+  @include css_anim();
+
+  text-decoration: none;
+  color: var(--link-text);
+
+  &:hover {
+    color: var(--link-hover);
   }
 }
